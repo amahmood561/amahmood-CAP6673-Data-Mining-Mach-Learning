@@ -1,0 +1,63 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.CostSensitiveClassifier -cost-matrix "[0.0 0.5; 1.0 0.0]" -S 1 -W weka.classifiers.meta.Bagging -- -P 100 -S 1 -num-slots 1 -I 25 -W weka.classifiers.trees.J48 -- -C 0.25 -M 2
+Relation:     FitClassificationAsamMahmood
+Instances:    188
+Attributes:   9
+              NUMUORS
+              NUMUANDS
+              TOTOTORS
+              TOTOPAND
+              VG
+              NLOGIC
+              LOC
+              ELOC
+              class
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+CostSensitiveClassifier using reweighted training instances
+
+weka.classifiers.meta.Bagging -P 100 -S 1 -num-slots 1 -I 25 -W weka.classifiers.trees.J48 -- -C 0.25 -M 2
+
+Classifier Model
+Bagging with 25 iterations and base learner
+
+weka.classifiers.trees.J48 -C 0.25 -M 2
+
+Cost Matrix
+ 0    0.5 
+ 1    0   
+
+
+Time taken to build model: 0.01 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances          78               82.9787 %
+Incorrectly Classified Instances        16               17.0213 %
+Kappa statistic                          0.5548
+Mean absolute error                      0.1923
+Root mean squared error                  0.3372
+Relative absolute error                 47.1226 %
+Root relative squared error             74.5189 %
+Total Number of Instances               94     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.593    0.075    0.762      0.593    0.667      0.563    0.891     0.768     fp
+                 0.925    0.407    0.849      0.925    0.886      0.563    0.891     0.938     nfp
+Weighted Avg.    0.830    0.312    0.824      0.830    0.823      0.563    0.891     0.889     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 16 11 |  a = fp
+  5 62 |  b = nfp
+

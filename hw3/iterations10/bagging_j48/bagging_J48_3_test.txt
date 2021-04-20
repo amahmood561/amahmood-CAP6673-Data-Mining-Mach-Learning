@@ -1,0 +1,63 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.CostSensitiveClassifier -cost-matrix "[0.0 3.0; 1.0 0.0]" -S 1 -W weka.classifiers.meta.Bagging -- -P 100 -S 1 -num-slots 1 -I 10 -W weka.classifiers.trees.J48 -- -C 0.25 -M 2
+Relation:     FitClassificationAsamMahmood
+Instances:    188
+Attributes:   9
+              NUMUORS
+              NUMUANDS
+              TOTOTORS
+              TOTOPAND
+              VG
+              NLOGIC
+              LOC
+              ELOC
+              class
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+CostSensitiveClassifier using reweighted training instances
+
+weka.classifiers.meta.Bagging -P 100 -S 1 -num-slots 1 -I 10 -W weka.classifiers.trees.J48 -- -C 0.25 -M 2
+
+Classifier Model
+Bagging with 10 iterations and base learner
+
+weka.classifiers.trees.J48 -C 0.25 -M 2
+
+Cost Matrix
+ 0 3
+ 1 0
+
+
+Time taken to build model: 0.01 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances          81               86.1702 %
+Incorrectly Classified Instances        13               13.8298 %
+Kappa statistic                          0.6928
+Mean absolute error                      0.1977
+Root mean squared error                  0.3506
+Relative absolute error                 48.436  %
+Root relative squared error             77.4878 %
+Total Number of Instances               94     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.926    0.164    0.694      0.926    0.794      0.709    0.899     0.822     fp
+                 0.836    0.074    0.966      0.836    0.896      0.709    0.899     0.944     nfp
+Weighted Avg.    0.862    0.100    0.888      0.862    0.867      0.709    0.899     0.909     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 25  2 |  a = fp
+ 11 56 |  b = nfp
+

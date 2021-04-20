@@ -1,0 +1,63 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.CostSensitiveClassifier -cost-matrix "[0.0 0.5; 1.0 0.0]" -S 1 -W weka.classifiers.meta.Bagging -- -P 100 -S 1 -num-slots 1 -I 10 -W weka.classifiers.trees.DecisionStump
+Relation:     FitClassificationAsamMahmood
+Instances:    188
+Attributes:   9
+              NUMUORS
+              NUMUANDS
+              TOTOTORS
+              TOTOPAND
+              VG
+              NLOGIC
+              LOC
+              ELOC
+              class
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+CostSensitiveClassifier using reweighted training instances
+
+weka.classifiers.meta.Bagging -P 100 -S 1 -num-slots 1 -I 10 -W weka.classifiers.trees.DecisionStump
+
+Classifier Model
+Bagging with 10 iterations and base learner
+
+weka.classifiers.trees.DecisionStump 
+
+Cost Matrix
+ 0    0.5 
+ 1    0   
+
+
+Time taken to build model: 0 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances          78               82.9787 %
+Incorrectly Classified Instances        16               17.0213 %
+Kappa statistic                          0.5207
+Mean absolute error                      0.224 
+Root mean squared error                  0.3276
+Relative absolute error                 54.8667 %
+Root relative squared error             72.4116 %
+Total Number of Instances               94     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.481    0.030    0.867      0.481    0.619      0.558    0.904     0.773     fp
+                 0.970    0.519    0.823      0.970    0.890      0.558    0.904     0.937     nfp
+Weighted Avg.    0.830    0.378    0.835      0.830    0.812      0.558    0.904     0.890     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 13 14 |  a = fp
+  2 65 |  b = nfp
+

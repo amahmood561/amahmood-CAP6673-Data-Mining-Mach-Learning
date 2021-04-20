@@ -1,0 +1,60 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.CostSensitiveClassifier -cost-matrix "[0.0 4.0; 1.0 0.0]" -S 1 -W weka.classifiers.meta.Bagging -- -P 100 -S 1 -num-slots 1 -I 10 -W weka.classifiers.trees.DecisionStump
+Relation:     FitClassificationAsamMahmood
+Instances:    188
+Attributes:   9
+              NUMUORS
+              NUMUANDS
+              TOTOTORS
+              TOTOPAND
+              VG
+              NLOGIC
+              LOC
+              ELOC
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+CostSensitiveClassifier using reweighted training instances
+
+weka.classifiers.meta.Bagging -P 100 -S 1 -num-slots 1 -I 10 -W weka.classifiers.trees.DecisionStump
+
+Classifier Model
+Bagging with 10 iterations and base learner
+
+weka.classifiers.trees.DecisionStump 
+
+Cost Matrix
+ 0 4
+ 1 0
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         153               81.383  %
+Incorrectly Classified Instances        35               18.617  %
+Kappa statistic                          0.6018
+Mean absolute error                      0.2331
+Root mean squared error                  0.3734
+Relative absolute error                 57.3949 %
+Root relative squared error             82.9536 %
+Total Number of Instances              188     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.925    0.230    0.613      0.925    0.737      0.632    0.879     0.633     fp
+                 0.770    0.075    0.963      0.770    0.856      0.632    0.879     0.942     nfp
+Weighted Avg.    0.814    0.119    0.864      0.814    0.822      0.632    0.879     0.854     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+  49   4 |   a = fp
+  31 104 |   b = nfp
+

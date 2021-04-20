@@ -1,0 +1,294 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.CostSensitiveClassifier -cost-matrix "[0.0 2.5; 1.0 0.0]" -S 1 -W weka.classifiers.meta.AdaBoostM1 -- -P 100 -S 1 -I 10 -W weka.classifiers.trees.DecisionStump
+Relation:     FitClassificationAsamMahmood
+Instances:    188
+Attributes:   9
+              NUMUORS
+              NUMUANDS
+              TOTOTORS
+              TOTOPAND
+              VG
+              NLOGIC
+              LOC
+              ELOC
+              class
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+CostSensitiveClassifier using reweighted training instances
+
+weka.classifiers.meta.AdaBoostM1 -P 100 -S 1 -I 10 -W weka.classifiers.trees.DecisionStump
+
+Classifier Model
+AdaBoostM1: Base classifiers and their weights: 
+
+Decision Stump
+
+Classifications
+
+ELOC <= 48.5 : nfp
+ELOC > 48.5 : fp
+ELOC is missing : nfp
+
+Class distributions
+
+ELOC <= 48.5
+fp	nfp	
+0.02369668246445501	0.9763033175355451	
+ELOC > 48.5
+fp	nfp	
+0.802469135802469	0.19753086419753102	
+ELOC is missing
+fp	nfp	
+0.49532710280373865	0.5046728971962614	
+
+
+Weight: 1.91
+
+Decision Stump
+
+Classifications
+
+LOC <= 1212.5 : nfp
+LOC > 1212.5 : fp
+LOC is missing : nfp
+
+Class distributions
+
+LOC <= 1212.5
+fp	nfp	
+0.19042500095980355	0.8095749990401965	
+LOC > 1212.5
+fp	nfp	
+0.8473882429998385	0.1526117570001615	
+LOC is missing
+fp	nfp	
+0.3152018411395161	0.6847981588604839	
+
+
+Weight: 1.49
+
+Decision Stump
+
+Classifications
+
+NUMUORS <= 17.5 : nfp
+NUMUORS > 17.5 : fp
+NUMUORS is missing : fp
+
+Class distributions
+
+NUMUORS <= 17.5
+fp	nfp	
+0.0	1.0	
+NUMUORS > 17.5
+fp	nfp	
+0.6037233410884547	0.3962766589115452	
+NUMUORS is missing
+fp	nfp	
+0.5194360960156938	0.48056390398430615	
+
+
+Weight: 0.66
+
+Decision Stump
+
+Classifications
+
+NUMUANDS <= 30.0 : nfp
+NUMUANDS > 30.0 : nfp
+NUMUANDS is missing : nfp
+
+Class distributions
+
+NUMUANDS <= 30.0
+fp	nfp	
+0.0	1.0	
+NUMUANDS > 30.0
+fp	nfp	
+0.44618690107637315	0.553813098923627	
+NUMUANDS is missing
+fp	nfp	
+0.3940803481304385	0.6059196518695615	
+
+
+Weight: 0.43
+
+Decision Stump
+
+Classifications
+
+NUMUANDS <= 30.0 : nfp
+NUMUANDS > 30.0 : fp
+NUMUANDS is missing : nfp
+
+Class distributions
+
+NUMUANDS <= 30.0
+fp	nfp	
+0.0	1.0	
+NUMUANDS > 30.0
+fp	nfp	
+0.5533222718878184	0.44667772811218154	
+NUMUANDS is missing
+fp	nfp	
+0.4999999999999991	0.500000000000001	
+
+
+Weight: 0.39
+
+Decision Stump
+
+Classifications
+
+NUMUANDS <= 30.0 : nfp
+NUMUANDS > 30.0 : nfp
+NUMUANDS is missing : nfp
+
+Class distributions
+
+NUMUANDS <= 30.0
+fp	nfp	
+0.0	1.0	
+NUMUANDS > 30.0
+fp	nfp	
+0.45605146997947904	0.5439485300205209	
+NUMUANDS is missing
+fp	nfp	
+0.4192046166227088	0.5807953833772912	
+
+
+Weight: 0.33
+
+Decision Stump
+
+Classifications
+
+NUMUANDS <= 30.0 : nfp
+NUMUANDS > 30.0 : fp
+NUMUANDS is missing : fp
+
+Class distributions
+
+NUMUANDS <= 30.0
+fp	nfp	
+0.0	1.0	
+NUMUANDS > 30.0
+fp	nfp	
+0.5373777426420998	0.46262225735790025	
+NUMUANDS is missing
+fp	nfp	
+0.5	0.5	
+
+
+Weight: 0.28
+
+Decision Stump
+
+Classifications
+
+NUMUORS <= 42.5 : nfp
+NUMUORS > 42.5 : fp
+NUMUORS is missing : nfp
+
+Class distributions
+
+NUMUORS <= 42.5
+fp	nfp	
+0.409437227810996	0.5905627721890041	
+NUMUORS > 42.5
+fp	nfp	
+0.9999999999999997	3.7829181824711803E-16	
+NUMUORS is missing
+fp	nfp	
+0.43893854975211427	0.5610614502478857	
+
+
+Weight: 0.45
+
+Decision Stump
+
+Classifications
+
+VG <= 49.0 : fp
+VG > 49.0 : nfp
+VG is missing : fp
+
+Class distributions
+
+VG <= 49.0
+fp	nfp	
+0.6246057843977857	0.37539421560221425	
+VG > 49.0
+fp	nfp	
+0.2246792261259389	0.775320773874061	
+VG is missing
+fp	nfp	
+0.5408782977314697	0.4591217022685304	
+
+
+Weight: 0.65
+
+Decision Stump
+
+Classifications
+
+NUMUORS <= 20.5 : nfp
+NUMUORS > 20.5 : fp
+NUMUORS is missing : nfp
+
+Class distributions
+
+NUMUORS <= 20.5
+fp	nfp	
+0.0823179686377719	0.9176820313622281	
+NUMUORS > 20.5
+fp	nfp	
+0.5072585524176458	0.49274144758235416	
+NUMUORS is missing
+fp	nfp	
+0.4447123816456582	0.5552876183543419	
+
+
+Weight: 0.27
+
+Number of performed Iterations: 10
+
+
+Cost Matrix
+ 0    2.5 
+ 1    0   
+
+
+Time taken to build model: 0 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances          76               80.8511 %
+Incorrectly Classified Instances        18               19.1489 %
+Kappa statistic                          0.595 
+Mean absolute error                      0.2067
+Root mean squared error                  0.3684
+Relative absolute error                 50.6449 %
+Root relative squared error             81.4248 %
+Total Number of Instances               94     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.926    0.239    0.610      0.926    0.735      0.627    0.887     0.705     fp
+                 0.761    0.074    0.962      0.761    0.850      0.627    0.887     0.937     nfp
+Weighted Avg.    0.809    0.121    0.861      0.809    0.817      0.627    0.887     0.870     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 25  2 |  a = fp
+ 16 51 |  b = nfp
+

@@ -1,0 +1,63 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.CostSensitiveClassifier -cost-matrix "[0.0 0.75; 1.0 0.0]" -S 1 -W weka.classifiers.meta.Bagging -- -P 100 -S 1 -num-slots 1 -I 10 -W weka.classifiers.trees.DecisionStump
+Relation:     FitClassificationAsamMahmood
+Instances:    188
+Attributes:   9
+              NUMUORS
+              NUMUANDS
+              TOTOTORS
+              TOTOPAND
+              VG
+              NLOGIC
+              LOC
+              ELOC
+              class
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+CostSensitiveClassifier using reweighted training instances
+
+weka.classifiers.meta.Bagging -P 100 -S 1 -num-slots 1 -I 10 -W weka.classifiers.trees.DecisionStump
+
+Classifier Model
+Bagging with 10 iterations and base learner
+
+weka.classifiers.trees.DecisionStump 
+
+Cost Matrix
+ 0    0.75
+ 1    0   
+
+
+Time taken to build model: 0 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances          84               89.3617 %
+Incorrectly Classified Instances        10               10.6383 %
+Kappa statistic                          0.7512
+Mean absolute error                      0.2186
+Root mean squared error                  0.3165
+Relative absolute error                 53.5647 %
+Root relative squared error             69.9457 %
+Total Number of Instances               94     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.889    0.104    0.774      0.889    0.828      0.755    0.904     0.774     fp
+                 0.896    0.111    0.952      0.896    0.923      0.755    0.904     0.937     nfp
+Weighted Avg.    0.894    0.109    0.901      0.894    0.896      0.755    0.904     0.890     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 24  3 |  a = fp
+  7 60 |  b = nfp
+

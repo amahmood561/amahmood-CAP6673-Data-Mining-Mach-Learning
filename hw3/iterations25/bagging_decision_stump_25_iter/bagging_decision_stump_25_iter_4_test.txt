@@ -1,0 +1,63 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.CostSensitiveClassifier -cost-matrix "[0.0 4.0; 1.0 0.0]" -S 1 -W weka.classifiers.meta.Bagging -- -P 100 -S 1 -num-slots 1 -I 25 -W weka.classifiers.trees.DecisionStump
+Relation:     FitClassificationAsamMahmood
+Instances:    188
+Attributes:   9
+              NUMUORS
+              NUMUANDS
+              TOTOTORS
+              TOTOPAND
+              VG
+              NLOGIC
+              LOC
+              ELOC
+              class
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+CostSensitiveClassifier using reweighted training instances
+
+weka.classifiers.meta.Bagging -P 100 -S 1 -num-slots 1 -I 25 -W weka.classifiers.trees.DecisionStump
+
+Classifier Model
+Bagging with 25 iterations and base learner
+
+weka.classifiers.trees.DecisionStump 
+
+Cost Matrix
+ 0 4
+ 1 0
+
+
+Time taken to build model: 0 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances          76               80.8511 %
+Incorrectly Classified Instances        18               19.1489 %
+Kappa statistic                          0.595 
+Mean absolute error                      0.2443
+Root mean squared error                  0.396 
+Relative absolute error                 59.8543 %
+Root relative squared error             87.5096 %
+Total Number of Instances               94     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.926    0.239    0.610      0.926    0.735      0.627    0.896     0.701     fp
+                 0.761    0.074    0.962      0.761    0.850      0.627    0.896     0.937     nfp
+Weighted Avg.    0.809    0.121    0.861      0.809    0.817      0.627    0.896     0.869     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 25  2 |  a = fp
+ 16 51 |  b = nfp
+

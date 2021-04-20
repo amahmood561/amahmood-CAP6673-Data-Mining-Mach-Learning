@@ -1,0 +1,88 @@
+=== Run information ===
+Scheme:       weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 500 -V 10 -S 0 -E 20 -H 3 -G -R
+Relation:     amahmoo6FitClassifier-weka.filters.unsupervised.attribute.Normalize-S1.0-T0.0
+Instances:    188
+Attributes:   9
+              NUMUORS
+              NUMUANDS
+              TOTOTORS
+              TOTOPANDS
+              VG
+              NLOGIC
+              LOC
+              ELOC
+              class
+Test mode:    evaluate on training data
+=== Classifier model (full training set) ===
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    2.7975575879905303
+    Node 2    -1.7329969496990425
+    Node 3    -2.9996243494979753
+    Node 4    -2.0130571594531563
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -2.7970008122345926
+    Node 2    1.743430739969983
+    Node 3    2.9984883265289533
+    Node 4    2.002486644742359
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -1.9393353293604465
+    Attrib NUMUORS    -2.521343345863533
+    Attrib NUMUANDS    -0.8789229474577283
+    Attrib TOTOTORS    -0.3436674356610602
+    Attrib TOTOPANDS    -0.30717083152800556
+    Attrib VG    1.557416602055089
+    Attrib NLOGIC    -0.007231787104530284
+    Attrib LOC    -0.9160206657529396
+    Attrib ELOC    -0.350326110612357
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -2.9595940942602645
+    Attrib NUMUORS    -3.7224314645303243
+    Attrib NUMUANDS    -1.360777171318436
+    Attrib TOTOTORS    -0.5646859099129737
+    Attrib TOTOPANDS    -0.4646265643859625
+    Attrib VG    2.573261620963471
+    Attrib NLOGIC    0.12670586553118862
+    Attrib LOC    -1.456583010228662
+    Attrib ELOC    -0.4465902786933745
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -2.1886830183128
+    Attrib NUMUORS    -2.780971482531965
+    Attrib NUMUANDS    -1.015207774063554
+    Attrib TOTOTORS    -0.42257145195213613
+    Attrib TOTOPANDS    -0.39555151547713674
+    Attrib VG    1.7728378997473158
+    Attrib NLOGIC    0.013256442021620782
+    Attrib LOC    -1.018300735525374
+    Attrib ELOC    -0.3227648001869031
+Class fp
+    Input
+    Node 0
+Class nfp
+    Input
+    Node 1
+Time taken to build model: 1.63 seconds
+=== Evaluation on training set ===
+Time taken to test model on training data: 0 seconds
+=== Summary ===
+Correctly Classified Instances         163               86.7021 %
+Incorrectly Classified Instances        25               13.2979 %
+Kappa statistic                          0.6578
+Mean absolute error                      0.2151
+Root mean squared error                  0.298
+Relative absolute error                 52.9926 %
+Root relative squared error             66.2355 %
+Total Number of Instances              188
+=== Detailed Accuracy By Class ===
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.698    0.067    0.804      0.698    0.747      0.661    0.945     0.882     fp
+                 0.933    0.302    0.887      0.933    0.910      0.661    0.945     0.979     nfp
+Weighted Avg.    0.867    0.236    0.864      0.867    0.864      0.661    0.945     0.951
+=== Confusion Matrix ===
+   a   b   <-- classified as
+  37  16 |   a = fp
+   9 126 |   b = nfp

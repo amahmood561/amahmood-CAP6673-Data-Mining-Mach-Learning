@@ -1,0 +1,636 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.CostSensitiveClassifier -cost-matrix "[0.0 3.0; 1.0 0.0]" -S 1 -W weka.classifiers.meta.AdaBoostM1 -- -P 100 -S 1 -I 25 -W weka.classifiers.trees.DecisionStump
+Relation:     FitClassificationAsamMahmood
+Instances:    188
+Attributes:   9
+              NUMUORS
+              NUMUANDS
+              TOTOTORS
+              TOTOPAND
+              VG
+              NLOGIC
+              LOC
+              ELOC
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+CostSensitiveClassifier using reweighted training instances
+
+weka.classifiers.meta.AdaBoostM1 -P 100 -S 1 -I 25 -W weka.classifiers.trees.DecisionStump
+
+Classifier Model
+AdaBoostM1: Base classifiers and their weights: 
+
+Decision Stump
+
+Classifications
+
+ELOC <= 48.5 : nfp
+ELOC > 48.5 : fp
+ELOC is missing : fp
+
+Class distributions
+
+ELOC <= 48.5
+fp	nfp	
+0.02830188679245289	0.9716981132075471	
+ELOC > 48.5
+fp	nfp	
+0.8297872340425532	0.17021276595744683	
+ELOC is missing
+fp	nfp	
+0.5408163265306132	0.45918367346938693	
+
+
+Weight: 2.0
+
+Decision Stump
+
+Classifications
+
+LOC <= 1212.5 : nfp
+LOC > 1212.5 : fp
+LOC is missing : nfp
+
+Class distributions
+
+LOC <= 1212.5
+fp	nfp	
+0.21345595353339816	0.7865440464666017	
+LOC > 1212.5
+fp	nfp	
+0.8587786259542045	0.14122137404579552	
+LOC is missing
+fp	nfp	
+0.34401544401544426	0.6559845559845559	
+
+
+Weight: 1.39
+
+Decision Stump
+
+Classifications
+
+NUMUORS <= 17.5 : nfp
+NUMUORS > 17.5 : fp
+NUMUORS is missing : fp
+
+Class distributions
+
+NUMUORS <= 17.5
+fp	nfp	
+0.0	1.0	
+NUMUORS > 17.5
+fp	nfp	
+0.6192560234132849	0.38074397658671516	
+NUMUORS is missing
+fp	nfp	
+0.5365890747455843	0.4634109252544158	
+
+
+Weight: 0.71
+
+Decision Stump
+
+Classifications
+
+NUMUANDS <= 30.0 : nfp
+NUMUANDS > 30.0 : nfp
+NUMUANDS is missing : nfp
+
+Class distributions
+
+NUMUANDS <= 30.0
+fp	nfp	
+0.0	1.0	
+NUMUANDS > 30.0
+fp	nfp	
+0.4504492875596233	0.5495507124403767	
+NUMUANDS is missing
+fp	nfp	
+0.40038997720187086	0.599610022798129	
+
+
+Weight: 0.4
+
+Decision Stump
+
+Classifications
+
+NUMUANDS <= 30.0 : nfp
+NUMUANDS > 30.0 : fp
+NUMUANDS is missing : fp
+
+Class distributions
+
+NUMUANDS <= 30.0
+fp	nfp	
+0.0	1.0	
+NUMUANDS > 30.0
+fp	nfp	
+0.5510675362345336	0.44893246376546647	
+NUMUANDS is missing
+fp	nfp	
+0.5000000000000002	0.4999999999999998	
+
+
+Weight: 0.38
+
+Decision Stump
+
+Classifications
+
+NUMUORS <= 42.5 : nfp
+NUMUORS > 42.5 : fp
+NUMUORS is missing : nfp
+
+Class distributions
+
+NUMUORS <= 42.5
+fp	nfp	
+0.39065498356247813	0.6093450164375218	
+NUMUORS > 42.5
+fp	nfp	
+0.9999999999999959	4.06437977434043E-15	
+NUMUORS is missing
+fp	nfp	
+0.4218197607387283	0.5781802392612716	
+
+
+Weight: 0.53
+
+Decision Stump
+
+Classifications
+
+NUMUANDS <= 30.0 : nfp
+NUMUANDS > 30.0 : fp
+NUMUANDS is missing : fp
+
+Class distributions
+
+NUMUANDS <= 30.0
+fp	nfp	
+0.0	1.0	
+NUMUANDS > 30.0
+fp	nfp	
+0.5764397738832173	0.42356022611678273	
+NUMUANDS is missing
+fp	nfp	
+0.5406345836235414	0.4593654163764586	
+
+
+Weight: 0.42
+
+Decision Stump
+
+Classifications
+
+VG <= 49.0 : fp
+VG > 49.0 : nfp
+VG is missing : nfp
+
+Class distributions
+
+VG <= 49.0
+fp	nfp	
+0.5338634189467302	0.46613658105326994	
+VG > 49.0
+fp	nfp	
+0.16885171849690464	0.8311482815030954	
+VG is missing
+fp	nfp	
+0.4484740995867527	0.5515259004132473	
+
+
+Weight: 0.42
+
+Decision Stump
+
+Classifications
+
+NUMUORS <= 20.5 : nfp
+NUMUORS > 20.5 : nfp
+NUMUORS is missing : nfp
+
+Class distributions
+
+NUMUORS <= 20.5
+fp	nfp	
+0.07476433642043658	0.9252356635795633	
+NUMUORS > 20.5
+fp	nfp	
+0.4406298211356156	0.5593701788643844	
+NUMUORS is missing
+fp	nfp	
+0.38868592721468587	0.6113140727853141	
+
+
+Weight: 0.45
+
+Decision Stump
+
+Classifications
+
+NUMUORS <= 20.5 : nfp
+NUMUORS > 20.5 : fp
+NUMUORS is missing : nfp
+
+Class distributions
+
+NUMUORS <= 20.5
+fp	nfp	
+0.11275855823565074	0.8872414417643493	
+NUMUORS > 20.5
+fp	nfp	
+0.5533543122656285	0.44664568773437147	
+NUMUORS is missing
+fp	nfp	
+0.49999999999999933	0.5000000000000006	
+
+
+Weight: 0.38
+
+Decision Stump
+
+Classifications
+
+LOC <= 2017.0 : nfp
+LOC > 2017.0 : fp
+LOC is missing : nfp
+
+Class distributions
+
+LOC <= 2017.0
+fp	nfp	
+0.3994408788703593	0.6005591211296407	
+LOC > 2017.0
+fp	nfp	
+1.0000000000000193	-1.9410817905752813E-14	
+LOC is missing
+fp	nfp	
+0.42633591440271745	0.5736640855972827	
+
+
+Weight: 0.48
+
+Decision Stump
+
+Classifications
+
+LOC <= 175.0 : fp
+LOC > 175.0 : nfp
+LOC is missing : fp
+
+Class distributions
+
+LOC <= 175.0
+fp	nfp	
+0.8808112364657984	0.11918876353420163	
+LOC > 175.0
+fp	nfp	
+0.4862622021467384	0.5137377978532616	
+LOC is missing
+fp	nfp	
+0.5362062530548365	0.4637937469451635	
+
+
+Weight: 0.24
+
+Decision Stump
+
+Classifications
+
+NUMUANDS <= 30.0 : nfp
+NUMUANDS > 30.0 : fp
+NUMUANDS is missing : fp
+
+Class distributions
+
+NUMUANDS <= 30.0
+fp	nfp	
+0.0	1.0	
+NUMUANDS > 30.0
+fp	nfp	
+0.6049011671903358	0.3950988328096641	
+NUMUANDS is missing
+fp	nfp	
+0.5823623633414153	0.41763763665858455	
+
+
+Weight: 0.49
+
+Decision Stump
+
+Classifications
+
+VG <= 49.0 : fp
+VG > 49.0 : nfp
+VG is missing : nfp
+
+Class distributions
+
+VG <= 49.0
+fp	nfp	
+0.5300866246040766	0.46991337539592337	
+VG > 49.0
+fp	nfp	
+0.22840451685798333	0.7715954831420168	
+VG is missing
+fp	nfp	
+0.46993306587960404	0.530066934120396	
+
+
+Weight: 0.32
+
+Decision Stump
+
+Classifications
+
+NUMUANDS <= 115.5 : nfp
+NUMUANDS > 115.5 : fp
+NUMUANDS is missing : nfp
+
+Class distributions
+
+NUMUANDS <= 115.5
+fp	nfp	
+0.29136962586496695	0.708630374135033	
+NUMUANDS > 115.5
+fp	nfp	
+0.5766961452044367	0.4233038547955634	
+NUMUANDS is missing
+fp	nfp	
+0.42095747594397387	0.5790425240560261	
+
+
+Weight: 0.61
+
+Decision Stump
+
+Classifications
+
+VG <= 29.5 : fp
+VG > 29.5 : nfp
+VG is missing : nfp
+
+Class distributions
+
+VG <= 29.5
+fp	nfp	
+0.5579148736184514	0.44208512638154857	
+VG > 29.5
+fp	nfp	
+0.22918739566758806	0.7708126043324119	
+VG is missing
+fp	nfp	
+0.4282392159581818	0.5717607840418183	
+
+
+Weight: 0.58
+
+Decision Stump
+
+Classifications
+
+NUMUORS <= 42.5 : nfp
+NUMUORS > 42.5 : fp
+NUMUORS is missing : nfp
+
+Class distributions
+
+NUMUORS <= 42.5
+fp	nfp	
+0.3592768578709796	0.6407231421290204	
+NUMUORS > 42.5
+fp	nfp	
+0.9999999999999879	1.2165777686774374E-14	
+NUMUORS is missing
+fp	nfp	
+0.38938321938282106	0.610616780617179	
+
+
+Weight: 0.65
+
+Decision Stump
+
+Classifications
+
+TOTOPAND <= 57.5 : fp
+TOTOPAND > 57.5 : nfp
+TOTOPAND is missing : fp
+
+Class distributions
+
+TOTOPAND <= 57.5
+fp	nfp	
+0.8800976713090948	0.11990232869090524	
+TOTOPAND > 57.5
+fp	nfp	
+0.4852966194088863	0.5147033805911138	
+TOTOPAND is missing
+fp	nfp	
+0.535726694798113	0.4642733052018871	
+
+
+Weight: 0.25
+
+Decision Stump
+
+Classifications
+
+NUMUORS <= 17.5 : nfp
+NUMUORS > 17.5 : fp
+NUMUORS is missing : fp
+
+Class distributions
+
+NUMUORS <= 17.5
+fp	nfp	
+0.0	1.0	
+NUMUORS > 17.5
+fp	nfp	
+0.6015664864064942	0.39843351359350576	
+NUMUORS is missing
+fp	nfp	
+0.5826695054535426	0.4173304945464574	
+
+
+Weight: 0.46
+
+Decision Stump
+
+Classifications
+
+TOTOPAND <= 57.5 : fp
+TOTOPAND > 57.5 : nfp
+TOTOPAND is missing : nfp
+
+Class distributions
+
+TOTOPAND <= 57.5
+fp	nfp	
+0.8383606382369135	0.1616393617630865	
+TOTOPAND > 57.5
+fp	nfp	
+0.4352191217090517	0.5647808782909483	
+TOTOPAND is missing
+fp	nfp	
+0.47442285279191265	0.5255771472080873	
+
+
+Weight: 0.37
+
+Decision Stump
+
+Classifications
+
+TOTOTORS <= 407.5 : nfp
+TOTOTORS > 407.5 : fp
+TOTOTORS is missing : fp
+
+Class distributions
+
+TOTOTORS <= 407.5
+fp	nfp	
+0.4184077912822527	0.5815922087177474	
+TOTOTORS > 407.5
+fp	nfp	
+0.6616137850622066	0.33838621493779353	
+TOTOTORS is missing
+fp	nfp	
+0.5496945722221914	0.4503054277778086	
+
+
+Weight: 0.51
+
+Decision Stump
+
+Classifications
+
+VG <= 49.0 : fp
+VG > 49.0 : nfp
+VG is missing : fp
+
+Class distributions
+
+VG <= 49.0
+fp	nfp	
+0.6124672936297142	0.3875327063702858	
+VG > 49.0
+fp	nfp	
+0.2539075689182674	0.7460924310817327	
+VG is missing
+fp	nfp	
+0.5423980005892592	0.45760199941074076	
+
+
+Weight: 0.57
+
+Decision Stump
+
+Classifications
+
+TOTOPAND <= 1565.5 : nfp
+TOTOPAND > 1565.5 : fp
+TOTOPAND is missing : nfp
+
+Class distributions
+
+TOTOPAND <= 1565.5
+fp	nfp	
+0.4274615809610918	0.5725384190389082	
+TOTOPAND > 1565.5
+fp	nfp	
+1.0000000000000082	-8.208075663590183E-15	
+TOTOPAND is missing
+fp	nfp	
+0.4544837062439869	0.5455162937560131	
+
+
+Weight: 0.38
+
+Decision Stump
+
+Classifications
+
+LOC <= 2017.0 : fp
+LOC > 2017.0 : fp
+LOC is missing : fp
+
+Class distributions
+
+LOC <= 2017.0
+fp	nfp	
+0.5182016397512357	0.4817983602487643	
+LOC > 2017.0
+fp	nfp	
+0.9999999999999397	6.024118314268414E-14	
+LOC is missing
+fp	nfp	
+0.5398143992640551	0.4601856007359449	
+
+
+Weight: 0.16
+
+Decision Stump
+
+Classifications
+
+LOC <= 2017.0 : nfp
+LOC > 2017.0 : fp
+LOC is missing : fp
+
+Class distributions
+
+LOC <= 2017.0
+fp	nfp	
+0.47832440837877266	0.5216755916212272	
+LOC > 2017.0
+fp	nfp	
+1.0000000000000193	-1.9329510052976832E-14	
+LOC is missing
+fp	nfp	
+0.5000000000000007	0.4999999999999992	
+
+
+Weight: 0.17
+
+Number of performed Iterations: 25
+
+
+Cost Matrix
+ 0 3
+ 1 0
+
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         164               87.234  %
+Incorrectly Classified Instances        24               12.766  %
+Kappa statistic                          0.7081
+Mean absolute error                      0.1439
+Root mean squared error                  0.3032
+Relative absolute error                 35.4276 %
+Root relative squared error             67.3753 %
+Total Number of Instances              188     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.906    0.141    0.716      0.906    0.800      0.719    0.939     0.814     fp
+                 0.859    0.094    0.959      0.859    0.906      0.719    0.939     0.969     nfp
+Weighted Avg.    0.872    0.107    0.890      0.872    0.876      0.719    0.939     0.925     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+  48   5 |   a = fp
+  19 116 |   b = nfp
+
